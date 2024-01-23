@@ -11,6 +11,7 @@ import React from 'react'
 import { Groups } from './src/screens/Groups'
 import { Loading } from './src/components/Loading'
 import { StatusBar } from 'expo-status-bar'
+import { Players } from './src/screens/Players'
 
 export default function App() {
   const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold })
@@ -18,7 +19,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <StatusBar style="light" backgroundColor="transparent" translucent />
-      {fontsLoaded ? <Groups /> : <Loading />}
+      {fontsLoaded ? <Players /> : <Loading />}
     </ThemeProvider>
   )
 }

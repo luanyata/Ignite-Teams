@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import { GroupCard } from '../../components/GroupCard'
-import { Header } from '../../components/Header'
-import { Highlight } from '../../components/Highlight'
+import { GroupCard } from '@components/GroupCard'
+import { Header } from '@components/Header'
+import { Highlight } from '@components/Highlight'
 import { Container } from './styles'
 import { FlatList } from 'react-native'
-import { ListEmpty } from '../../components/ListEmpty'
-import { Button } from '../../components/Button'
+import { ListEmpty } from '@components/ListEmpty'
+import { Button } from '@components/Button'
 
 export function Groups() {
   const [groups, setGroups] = useState<string[]>([
